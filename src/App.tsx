@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WorkList from './components/WorkExperience/WorkList';
+import ProjectList from './components/Projects/ProjectList'
+import Header from './components/Header'
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+import AboutPage from './components/About/About';
 
-function App() {
+// const background_url = "https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzA0MzRjZGI4MTJlNjdkMzBmNV93aW5kb3dzX3hwX2JsaXNzLXdpZGUuanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjc4MHg1MjAjIl1d/windows_xp_bliss-wide.jpg";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="about" css={css`
+      padding-top: 70px;
+      height: 100%;
+      background-color: rgb(10, 25, 47);
+    `}>
+      <Header />
+      <div css={css`
+        width: 1000px;
+        margin: 0 auto;
+      `}>
+        <AboutPage />
+        <WorkList />
+        <ProjectList />
+      </div>              
+    </div>    
   );
 }
 
