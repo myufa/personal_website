@@ -23,7 +23,7 @@ class Header extends Component<{}, state> {
         this.state = {
             prevScrollpos: window.pageYOffset,
             visible: true,
-            top: false
+            top: true
         };
     }
 
@@ -91,7 +91,13 @@ class Header extends Component<{}, state> {
                         backgroundColor="rgba(22,79,104,1)" 
                     />
                     <ResLink>
-                        <a href={resumeLink}>Resume</a>
+                        <a 
+                            href={require('./Assets/Michael-Yufa-Resume.pdf')} 
+                            target='_blank'
+                            rel="noopener noreferrer"
+                        >
+                            Resume
+                        </a>
                     </ResLink>
                 </SmLinks>      
 
