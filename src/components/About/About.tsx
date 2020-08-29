@@ -11,7 +11,7 @@ const languages = ["English", "Russian"];
 
 const AboutPage: React.FC = () => {
     return (
-        <div css={css`
+        <div id="About" css={css`
             display: flex;
             justify-content: center;
             align-items: center; 

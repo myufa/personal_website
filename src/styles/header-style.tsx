@@ -52,7 +52,7 @@ a{
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    margin: 0 auto;
+    margin: 0 auto;z
 }    
 border: solid 1px #50a9d1;
 border-radius: 8px;

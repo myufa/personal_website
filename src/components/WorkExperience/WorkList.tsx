@@ -8,7 +8,7 @@ import { ExperienceHeader } from '../../styles/experience-style'
 
 
 const WorkList: React.FC = () => (
-    <div className='workList' id='experience'
+    <div className='workList' id='Experience'
     css={css`
         padding: 40px;
         width: auto;

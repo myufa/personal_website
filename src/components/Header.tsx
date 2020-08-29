@@ -8,8 +8,6 @@ import { HeaderName, HeaderDiv, SmLinks, ResLink, PageLinks } from '../styles/he
 const githubUrl = 'https://github.com/myufa';
 const linkedInUrl = 'https://www.linkedin.com/in/myufa/';
 
-const resumeLink = 'michael_yufa_resume.pdf';
-
 interface state {
     prevScrollpos: number,
     visible: Boolean,
@@ -51,7 +49,7 @@ class Header extends Component<{}, state> {
 
     render(){
         return (
-            <HeaderDiv css={css`
+            <HeaderDiv id='Header' css={css`
                 ${this.state.visible ? `` : `top: -70px;`}
                 ${this.state.top ? `` : `box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;`}
                 
