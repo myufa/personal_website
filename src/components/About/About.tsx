@@ -5,7 +5,7 @@ import { css, jsx } from '@emotion/core';
 import { Language } from '../../styles/about-style'
 
 const aboutText = "I make web applications (and occasionally other things)";
-const profilePicUrl = "https://pbs.twimg.com/profile_images/1242876922406875136/T5XZpjjd_400x400.jpg";
+const profilePicUrl = "https://pbs.twimg.com/profile_images/1319329575348948996/KBv0xTbj_400x400.jpg";
 const codingLanguages = ["Javascript", "Python", "C++", "C", "SQL"];
 const languages = ["English", "Russian"];
 
