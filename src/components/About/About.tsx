@@ -34,6 +34,7 @@ const AboutPage: React.FC = () => {
                     className="profilePic" 
                     css={css`
                         width: 120px;
+                        height: 120px;
                         border: 10px solid rgb(5, 18, 37);
                         border-radius: 1000px;
                     `}
